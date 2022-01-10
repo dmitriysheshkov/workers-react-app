@@ -1,6 +1,6 @@
 import './search-panel.css';
 
-function SearchPanel() {
+const SearchPanel = () => {
   return (
     <input 
       className="search-panel" 

@@ -1,6 +1,6 @@
 import './header.css';
 
-function Header() {
+const Header = () => {
   return (
     <div className="header">
         <h1 className="header__title">Учёт сотрудников компании</h1>
