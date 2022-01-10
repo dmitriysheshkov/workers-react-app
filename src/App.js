@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+
+const Header = () => {
+  return <h1 className="app__header">Приложение</h1>;
+}
+
+const Field = function() {
+  const holder = 'Введите текст';
+  return <input placeholder={holder} type="text" />
+};
+
+function Btn() {
+  const text = () => { return 'Send' };
+  return <button>{ text() }</button>
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Header />
+      <Field />
+      <Btn />
     </div>
   );
 }
