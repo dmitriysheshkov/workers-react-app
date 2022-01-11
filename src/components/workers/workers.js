@@ -1,12 +1,19 @@
 import './workers.css';
 import WorkersItem from '../workers-item/workers-item'
 
-const Workers = () => {
+const Workers = ({ data }) => {
+
+  const elements = data.map( item => {
+
+    return (
+      <WorkersItem { ...item } />
+    )
+    
+  });
+
   return (
     <ul className="workers">
-      <WorkersItem />
-      <WorkersItem />
-      <WorkersItem />
+      {elements}
     </ul>
   );
 }

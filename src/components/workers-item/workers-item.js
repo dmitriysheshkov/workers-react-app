@@ -1,10 +1,10 @@
 import './workers-item.css';
 
-const WorkersItem = () => {
+const WorkersItem = ({ name, salary, increase }) => {
   return (
-    <li className="workers__item">
-        <p className="workers__name">John Smith</p>
-        <input className="workers__input" type="text" defaultValue="1000$" />
+    <li className={ increase ? 'workers__item workers__item--increase' : 'workers__item' }>
+        <p className="workers__name">{ name }</p>
+        <input className="workers__input" type="text" defaultValue={ salary + '$' } />
         <ul className="workers__buttons">
           <li className="workers__button-item">
             <span className="workers__button">Премировать</span>
@@ -18,6 +18,6 @@ const WorkersItem = () => {
         </ul>
     </li>
   );
-}
+};
 
 export default WorkersItem;
