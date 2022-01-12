@@ -6,9 +6,9 @@ import Workers from '../workers/workers';
 import WorkersForm from '../workers-form/workers-form'
 
 const data = [
-  {name: 'John F.', salary: 1200, increase: false},
-  {name: 'Alex S.', salary: 900, increase: true},
-  {name: 'Carl W.', salary: 300, increase: false}
+  {name: 'John F.', salary: 1200, increase: false, id: 1},
+  {name: 'Alex S.', salary: 900, increase: true, id: 2},
+  {name: 'Carl W.', salary: 300, increase: false, id: 3}
 ];
 
 const App = () => {

@@ -1,6 +1,6 @@
 import './workers-item.css';
 
-const WorkersItem = ({ name, salary, increase }) => {
+const WorkersItem = ({ name, salary, increase, id }) => {
   return (
     <li className={ increase ? 'workers__item workers__item--increase' : 'workers__item' }>
         <p className="workers__name">{ name }</p>
