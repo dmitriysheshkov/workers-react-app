@@ -5,7 +5,7 @@ const Workers = ({ data }) => {
 
   const elements = data.map( item => {
 
-    const {id, propsItem} = item;
+    const {id, ...propsItem} = item;
 
     return (
       <WorkersItem key={id} { ...propsItem } />
